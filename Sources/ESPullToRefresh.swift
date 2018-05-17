@@ -338,7 +338,7 @@ open class ESRefreshHeaderView: ESRefreshComponent {
 }
 
 open class ESRefreshFooterView: ESRefreshComponent {
-    fileprivate var scrollViewInsets: UIEdgeInsets = UIEdgeInsets.zero
+    open var scrollViewInsets: UIEdgeInsets = UIEdgeInsets.zero
     open var noMoreData = false {
         didSet {
             if noMoreData != oldValue {
