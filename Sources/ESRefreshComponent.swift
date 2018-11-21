@@ -136,22 +136,22 @@ open class ESRefreshComponent: UIView {
         self.stop()
     }
     
-    public func start() {
+    open func start() {
         
     }
     
-    public func stop() {
+    open func stop() {
         _isRefreshing = false
         _isAutoRefreshing = false
     }
     
     //  ScrollView contentSize change action
-    public func sizeChangeAction(object: AnyObject?, change: [NSKeyValueChangeKey : Any]?) {
+    open func sizeChangeAction(object: AnyObject?, change: [NSKeyValueChangeKey : Any]?) {
         
     }
     
     //  ScrollView offset change action
-    public func offsetChangeAction(object: AnyObject?, change: [NSKeyValueChangeKey : Any]?) {
+    open func offsetChangeAction(object: AnyObject?, change: [NSKeyValueChangeKey : Any]?) {
         
     }
     
