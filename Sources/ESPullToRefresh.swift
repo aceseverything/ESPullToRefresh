@@ -924,10 +924,9 @@ open class ESRefreshRightView: ESRefreshComponent {
         
         self.animator.refreshAnimationEnd(view: self)
         
-        // Back state
-        scrollView.contentInset.right = self.scrollViewInsets.right
-        scrollView.contentOffset.x = self.previousOffset
+        // Back state        
         UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
+            scrollView.contentOffset.x = scrollView.contentSize.width - scrollView.bounds.width
             self.alpha = 0.0
         }, completion: { (finished) in
             self.animator.refresh(view: self, stateDidChange: .pullToRefresh)
